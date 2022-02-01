@@ -6,6 +6,7 @@ import {SearchIcon} from '@heroicons/react/outline'
 import Footer from '../components/Footer'
 import { useRef } from 'react';
 import { useRouter } from 'next/router';
+import Signature from '../components/Signature'
 
 
 export default function Home() {
@@ -82,14 +83,17 @@ export default function Home() {
         sm:flex-row sm:space-x-4'>
 
           <button onClick={search} className='btn'>Google Search</button>
-          <button onClick={search} className='btn'> I'm Feeling Lucky</button>
+          <button onClick={search} className='btn'> I am Feeling Lucky</button>
 
         </div>
         </form>
 
       {/* Footer */}
+         <Signature />
 
       <Footer />
+
+   
         
      
       

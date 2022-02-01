@@ -32,7 +32,8 @@ function Header() {
             shadow-lg max-w-3xl items-center ">
                 <input ref={searchInputRef} type="text" placeholder="Search"
                         className='flex-grow w-full focus:outline-none'
-                />
+                        defaultValue={router.query.term} />
+               
                 <XIcon className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
                     onClick={() => searchInputRef.current.value = ''}
                 />
