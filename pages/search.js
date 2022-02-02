@@ -22,7 +22,7 @@ function Search( { results } ) {
        
         {/* Search Result */}
         <SearchResults results = {results} />
-    
+
     </div>;
     
     
@@ -35,7 +35,7 @@ export async function getServerSideProps( context ) {
     // 
     // AIzaSyAHi-PlaQFWh-p4BbqFR1rzrqJkNXsAkXU
     // 
-    const useDummyData = true;
+    const useDummyData = false;
     const startIndex = context.query.start || '0';
 
     const data =useDummyData ? Responce : await fetch(
